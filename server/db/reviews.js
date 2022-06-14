@@ -9,12 +9,11 @@ const connection = new pg.Pool({
   port: process.env.PGPORT
 });
 
-
 // const connection = new pg.Client({
-//   host: '127.0.0.1',
-//   user: 'xiaohan',
-//   password: '',
-//   database: 'ratingsandreviews'
+//   host: process.env.LCHOST,
+//   user: process.env.LCUSER,
+//   password: process.env.LCPASSWORD,
+//   database: process.env.LCDATABASE
 // });
 
 connection.connect((err) => {
